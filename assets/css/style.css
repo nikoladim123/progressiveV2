@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background: #f20000;
+}
+
+header {
+  background: #ff2c39;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4vw;
+  padding-top: 1.76vw;
+}
+
+nav a {
+  color: white;
+  font-size: 1.45137vw;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.secundNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5.3vw;
+  align-items: baseline;
+  padding-bottom: 1vw;
+  margin-top: -1.55vw;
+}
+
+.logo-container {
+  display: flex;
+  position: relative;
+  top: 1vw;
+}
+
+.logo {
+  width: 5.611998064828253vw;
+  height: 5.660377358490567vw;
+}
+
+.logo-description-container h1 {
+  color: white;
+  font-family: serif;
+  margin: 0;
+  font-size: 2.902757vw;
+  position: relative;
+  top: -2vw;
+  left: 0.5vw;
+}
+
+.logo-description-container h1 span {
+  font-weight: 100;
+  font-size: 1.741654571vw;
+  position: relative;
+  top: 0.81vw;
+}
+
+.addYourIssuebox {
+  display: flex;
+  border: 0.2vw solid white;
+  height: 3.214465vw;
+  align-items: center;
+}
+
+.addYourIssuebox p {
+  color: white;
+  font-size: 1.4513788vw;
+  margin: 0;
+  padding: 0 2.75vw;
+}
+
+.addYourIssuebox span {
+    font-size: 1.6vw;
+}
+
+.donate {
+  color: #ff2c39;
+  background: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.209482vw;
+  font-weight: 600;
+  padding: 0 0.51vw;
+  cursor: pointer;
+}
+
+/* main */
+main {
+  position: relative;
+}
+
+.napoleonContainer {
+  position: relative;
+  width: 100%;
+  height: 38vw;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  /* border: 1px solid gray; */
+}
+
+.napSingleContainer {
+  cursor: pointer;
+  position: relative;
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 33.3%;
+  overflow: hidden;
+  transition: .5s ease;
+  filter: saturate(100%);
+}
+
+.personName{
+  transition: 1s ease;
+  position: absolute;
+  top: 1vw;
+  writing-mode: tb;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.075;
+  font-size: 2.90275vw;
+  margin: 0;
+}
+
+.napSingleContainer:hover .personName{
+  opacity: 1;
+}
+
+.napSingleBox {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: 0s ease;
+  transform: translateX(0%);
+}
+
+.napSingleBox img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.napSingleBoxHover {
+  transition: 0.5s ease;
+  transform: translateX(-100%);
+}
+
+/* main end */
