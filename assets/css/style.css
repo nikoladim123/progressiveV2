@@ -93,65 +93,65 @@ main {
   position: relative;
 }
 
-.napoleonContainer {
-  position: relative;
+.portfoContent{
   width: 100%;
-  height: 38vw;
   display: flex;
-  justify-content: space-around;
-  background: black;
-  /* border: 1px solid gray; */
+  height: 38vw;
+  /* flex-basis: 0; */
 }
-
-.napSingleContainer {
+.portfoBox{
   cursor: pointer;
   position: relative;
-  /* border: 1px solid red; */
-  height: 100%;
-  width: 33.3%;
+  transition: all 0.5s ease;
+  /* flex-basis: 100%; */
+  width: 20%;
   overflow: hidden;
-  transition: .5s ease;
-  filter: saturate(100%);
+  height: 100%;
+  /* flex-shrink: 0; */
+  /* align-items: center; */
+  /* flex-basis: 0; */
+  /* flex-grow: 1; */
+}
+.portfoBox:hover{
+  width: 24%;
 }
 
-.personName{
-  transition: 1s ease;
-  position: absolute;
-  top: 1vw;
-  writing-mode: tb;
+
+.portfoBox img{
+  transition: all 1s ease;
+  /* width: 100%; */
+  object-fit: cover;
+  width: 100%;
   height: 100%;
+}
+.portfoBox:hover img{
+  cursor: pointer;
+}
+
+
+.portBoxOverlay{
+  transition: 0.5s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  opacity: 0.075;
-  font-size: 2.90275vw;
-  margin: 0;
 }
 
-.napSingleContainer:hover .personName{
+.nameOfPerson{
+  transition: 0.5s ease;
+  font-family: 'Roboto-Black.ttf';
+  color: white;
+  font-size: 3.4833vw;
+  writing-mode:tb;
+  margin: 0;
+  opacity: 0.07;
+}
+.portfoBox:hover .nameOfPerson{
   opacity: 1;
 }
 
-.napSingleBox {
-  position: relative;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  transition: 0s ease;
-  transform: translateX(0%);
-}
-
-.napSingleBox img {
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.napSingleBoxHover {
-  transition: 0.5s ease;
-  transform: translateX(-100%);
-}
 
 /* main end */
