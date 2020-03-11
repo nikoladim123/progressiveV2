@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: #f20000;
@@ -10,7 +14,7 @@ header {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 4vw;
+  padding-right: 3.3vw;
   padding-top: 1.76vw;
 }
 
@@ -19,6 +23,12 @@ nav a {
   font-size: 1.45137vw;
   text-decoration: none;
   margin-right: 2vw;
+  text-align: center;
+}
+
+nav a:last-child{
+  background: rgba(255,255,255,0.4);
+    padding: 0 1.6vw;
 }
 
 .secundNav {
@@ -27,7 +37,7 @@ nav a {
   padding: 0 5.3vw;
   align-items: baseline;
   padding-bottom: 1vw;
-  margin-top: -1.55vw;
+  margin-top: -2.9vw;
 }
 
 .logo-container {
@@ -69,11 +79,11 @@ nav a {
   color: white;
   font-size: 1.4513788vw;
   margin: 0;
-  padding: 0 2.75vw;
+  padding: 0px 2vw;
 }
 
 .addYourIssuebox span {
-    font-size: 1.6vw;
+  font-size: 1.6vw;
 }
 
 .donate {
@@ -93,13 +103,14 @@ main {
   position: relative;
 }
 
-.portfoContent{
+.portfoContent {
   width: 100%;
   display: flex;
   height: 38vw;
   /* flex-basis: 0; */
 }
-.portfoBox{
+
+.portfoBox {
   cursor: pointer;
   position: relative;
   transition: all 0.5s ease;
@@ -112,24 +123,24 @@ main {
   /* flex-basis: 0; */
   /* flex-grow: 1; */
 }
-.portfoBox:hover{
+
+.portfoBox:hover {
   width: 24%;
 }
 
-
-.portfoBox img{
+.portfoBox img {
   transition: all 1s ease;
   /* width: 100%; */
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.portfoBox:hover img{
+
+.portfoBox:hover img {
   cursor: pointer;
 }
 
-
-.portBoxOverlay{
+.portBoxOverlay {
   transition: 0.5s ease;
   position: absolute;
   width: 100%;
@@ -140,18 +151,113 @@ main {
   align-items: center;
 }
 
-.nameOfPerson{
+.nameOfPerson {
   transition: 0.5s ease;
   font-family: 'Roboto-Black.ttf';
   color: white;
   font-size: 3.4833vw;
-  writing-mode:tb;
+  writing-mode: tb;
   margin: 0;
   opacity: 0.07;
 }
-.portfoBox:hover .nameOfPerson{
+
+.portfoBox:hover .nameOfPerson {
   opacity: 1;
 }
 
-
 /* main end */
+/* blog popup start*/
+.blogPopUpContainer {
+  transition: 1s ease;
+  /* opacity: 0; */
+  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  pointer-events: none;
+  left: 0;
+}
+
+.blogPopUpContent {
+  transition: 0.75s ease;
+  /* border: 1px solid red; */
+  background: White;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 68vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  margin-left: 16vw;
+  top: -100%;
+}
+
+.blogPopUpContent::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    position: absolute;
+}
+.blogPopUpContent::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #888;
+}
+
+.blogPopUpContent  h2{
+  font-size: 3.4833vw;
+}
+
+.blogPopUpContent p {
+  width: 44vw;
+  font-size: 1.384vw;
+}
+
+.popUpImage {
+  width: 50vw;
+  margin-top: 1.4043vw;
+  flex-shrink: 0;
+}
+
+.popUpCloseButton {
+  margin-top: 3vw;
+  transition: 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  /* bottom: 1vw; */
+  width: 11.52542vw;
+  flex-shrink: 0;
+  margin-bottom: 2vw;
+  height: 3.00242vw;
+  background: #ffae7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popUpCloseButton:hover {
+  filter: brightness(1.2);
+}
+
+.popUpCloseButton p {
+  font-size: 1.4527vw;
+  font-family: 'Lato-Bold';
+  width: auto;
+  margin: 0;
+}
+
+.bigClose {
+  width: 20%;
+  height: 2.66343vw;
+  background: #ffd6bf;
+  font-size: 1.74334vw;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  flex-shrink: 0;
+  margin-bottom: 22vw;
+  margin-top: 5vw;
+}
