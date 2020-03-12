@@ -37,7 +37,7 @@ nav a:last-child {
   justify-content: space-between;
   padding: 0 5.3vw;
   align-items: baseline;
-  padding-bottom: 1vw;
+  /* padding-bottom: 1vw; */
   margin-top: -2.9vw;
 }
 
@@ -64,13 +64,26 @@ nav a:last-child {
   position: relative;
   top: -2vw;
   left: 0.5vw;
+  height: 8vw;
 }
 
-.logo-description-container h1 span {
+.logoSpanOne {
   font-weight: 100;
   font-size: 1.741654571vw;
   position: relative;
   top: 0.81vw;
+}
+
+
+.logoSpantwo{
+
+font-weight: 100;
+
+font-size: 1.7vw;
+
+position: relative;
+
+top: -1.3vw;
 }
 
 .addYourIssuebox {

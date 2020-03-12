@@ -1,4 +1,4 @@
-*{
+* {
   scroll-behavior: smooth;
 }
 
@@ -26,9 +26,9 @@ nav a {
   text-align: center;
 }
 
-nav a:last-child{
-  background: rgba(255,255,255,0.4);
-    padding: 0 1.6vw;
+nav a:last-child {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 1.6vw;
 }
 
 .secundNav {
@@ -36,7 +36,7 @@ nav a:last-child{
   justify-content: space-between;
   padding: 0 5.3vw;
   align-items: baseline;
-  padding-bottom: 1vw;
+  /* padding-bottom: 1vw; */
   margin-top: -2.9vw;
 }
 
@@ -59,13 +59,21 @@ nav a:last-child{
   position: relative;
   top: -2vw;
   left: 0.5vw;
+  height: 8vw;
 }
 
-.logo-description-container h1 span {
+.logoSpanOne {
   font-weight: 100;
   font-size: 1.741654571vw;
   position: relative;
   top: 0.81vw;
+}
+
+.logoSpantwo {
+  font-weight: 100;
+  font-size: 1.7vw;
+  position: relative;
+  top: -1.3vw;
 }
 
 .addYourIssuebox {
@@ -151,26 +159,27 @@ main {
   align-items: center;
 }
 
-.portBoxOverlay::before{
+.portBoxOverlay::before {
   content: '';
   display: block;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   width: 20%;
   height: 180%;
   top: 1px;
   bottom: 1px;
   /* opacity: 0.2;  */
-  top:-120%;
+  top: -120%;
   left: 10%;
   transition: 2s;
   transform: rotate(45deg);
   z-index: 5;
   pointer-events: none;
 }
-.portBoxOverlay:hover:before{
-  top:100%;
-  left:100%;
+
+.portBoxOverlay:hover:before {
+  top: 100%;
+  left: 100%;
 }
 
 .nameOfPerson {
@@ -220,16 +229,17 @@ main {
 }
 
 .blogPopUpContent::-webkit-scrollbar {
-    width: 10px;
-    background-color: transparent;
-    position: absolute;
-}
-.blogPopUpContent::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background: #888;
+  width: 10px;
+  background-color: transparent;
+  position: absolute;
 }
 
-.blogPopUpContent  h2{
+.blogPopUpContent::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #888;
+}
+
+.blogPopUpContent h2 {
   font-size: 3.4833vw;
 }
 
